@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*FRONT*/
+
+body {
+  background: url(./img/champ.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -1;
+}
+.container {
+  position: relative;
+  margin: 70px;
+  width: 250px;
+  height: 500px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  border: 8px solid rgb(243, 247, 243);
+  line-height: 45px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.img-card{
+  width: 200px;
+  margin-top: 20px;
+  animation: flotar 3s ease-in-out infinite;
+  border-radius: 32px;
+  height: 250px;
+}
+h3{
+  font-size: 40px;
+  color: rgb(42, 7, 241);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white, 0 0 160px white;
+}
+h2{
+  position: absolute;
+  font-size: 60px;
+  color:  rgb(42, 7, 241);
+  left: 20px;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white, 0 0 160px white;
+}
+h4{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(42, 7, 241);
+  left: 50px;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 120px white, 0 0 160px white;
+}
+p{
+  font-size: 17px;
+  padding: 12px 15px;
+  color: #fff;
+  line-height: 20px;
+}
+
+/*BOTÓN*/
+
+.properties {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  top: -40px;
+  position: relative;
+  left: 30px;
+  background:rgb(252, 83, 5);
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 18px;
+  align-items: center;
+}
+.properties a{
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+
+
+/*BACK*/
+
+.container_1{
+  position: relative;
+  margin: 70px;
+  width: 250px;
+  height: 500px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  border: 8px solid rgb(243, 247, 243);
+  line-height: 35px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.container_1 p{
+  font-size: 15px;
+  padding: 12px 15px;
+  color: #fff;
+  line-height: 20px;
+}
+
+/* BOTÓN */
+
+.properties_1 {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  top: 5px;
+  position: relative;
+  left: 10px;
+  background:rgb(252, 83, 5);
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.properties_1 a{
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+
+@keyframes flotar{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
